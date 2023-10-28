@@ -1,0 +1,384 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-26T05:48:53.626Z",
+        "line": 16,
+        "name": "Verify if place is being added  successfully using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api-s;verify-if-place-is-being-added--successfully-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1156586500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Add Place Payload with \"Ranjitha\" \"English\" \"World Cross Center\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ranjitha\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"World Cross Center\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinition.add_Place_Payload_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1555899099,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2030000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.the_API_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 806260100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 699888800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify place_id created maps to \"Ranjitha\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ranjitha\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDefinition.verify_place_id_created_maps_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VerifyPlaceAPI\u0027s"
+          },
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-26T05:48:57.855Z",
+        "line": 17,
+        "name": "Verify if place is being added  successfully using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api-s;verify-if-place-is-being-added--successfully-using-addplaceapi;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4069000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Add Place Payload with \"Nidhish\" \"Hindi\" \"Street Cross Center\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Nidhish\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Hindi\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Street Cross Center\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.add_Place_Payload_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 222523700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.the_API_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14369301,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605699900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify place_id created maps to \"Nidhish\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Nidhish\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StepDefinition.verify_place_id_created_maps_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VerifyPlaceAPI\u0027s"
+          },
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-26T05:48:58.704Z",
+        "before": [
+          {
+            "result": {
+              "duration": 153201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify if delete place functionality is working",
+        "description": "",
+        "id": "validating-place-api-s;verify-if-delete-place-functionality-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 650799,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Delete Place payload",
+            "match": {
+              "location": "StepDefinition.delete_Place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 759251200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"deletePlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79399,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.the_API_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13500700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VerifyPlaceAPI\u0027s"
+          },
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place API\u0027s",
+    "description": "  I want to use this template to validate all place API\u0027s",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidations.feature",
+    "tags": [
+      {
+        "name": "@VerifyPlaceAPI\u0027s",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
